@@ -1,6 +1,10 @@
 export type TaskStatus = 'OPEN' | 'IN_PROGRESS' | 'DONE';
 
-export const taskStatusOptions: {}[] = [
+export const taskStatusOptions: {
+  value: 'open' | 'in-progress' | 'done';
+  taskStatus: TaskStatus;
+  text: string;
+}[] = [
   {
     value: 'open',
     taskStatus: 'OPEN',
